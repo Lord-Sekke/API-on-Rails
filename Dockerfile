@@ -1,9 +1,14 @@
 FROM ruby:2.6.3
 
 WORKDIR myapp
+RUN apt-get install git
+
+# Copy the current directory contents into the container at /myapp
+RUN cd /myapp && git clone https://github.com/Lord-Sekke/API-on-Rails.git
 
 # Set the working directory to /myapp
-RUN gem install bundler &&\
+RUN cd /myapp/API-on-Rails &&\
+    gem install bundler &&\
     gem update bundler &&\
     gem update mimemagic &&\
     bundle install
