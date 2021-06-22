@@ -2,9 +2,7 @@ FROM ruby:2.6.3
 
 
 # Set the working directory to /myapp
-RUN mkdir /myapp
-RUN cd /myapp && apt-get install git &&\
-    git clone https://github.com/Lord-Sekke/API-on-Rails.git &&\
+RUN cd myapp/API-on-Rails
     gem install bundler &&\
     gem update bundler &&\
     gem update mimemagic &&\
