@@ -1,6 +1,6 @@
 FROM ruby:2.6.3
 
-Workdir myapp
+WORKDIR myapp
 
 # Set the working directory to /myapp
 RUN gem install bundler &&\
