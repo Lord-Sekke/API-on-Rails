@@ -1,4 +1,4 @@
-
+FROM ruby:2.6.3
 
 # Add a script to be executed every time the container starts.COPY entrypoint.sh /usr/bin/
 COPY entrypoint.sh /usr/bin/
