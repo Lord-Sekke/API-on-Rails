@@ -1,11 +1,6 @@
 FROM ruby:2.6.3
 
-# Set the working directory to /myapp
-RUN mkdir /myapp
-RUN apt-get install git
 
-# Copy the current directory contents into the container at /myapp
-RUN cd /myapp && git clone https://github.com/Lord-Sekke/API-on-Rails.git
 
 RUN cd myapp && gem install bundler &&\
     gem update bundler &&\
