@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  rake db:setup
+  
   #host configuration for educative platform
   config.hosts << "x6jr4kg.educative.run"
   config.hosts << "81674631jk52n.educative.run"
