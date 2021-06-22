@@ -2,8 +2,7 @@ FROM ruby:2.6.3
 
 
 # Set the working directory to /myapp
-RUN cd /myapp/API-on-Rails &&\
-    gem install bundler &&\
+RUN gem install bundler &&\
     gem update bundler &&\
     gem update mimemagic &&\
     bundle install
