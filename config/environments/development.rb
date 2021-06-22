@@ -2,6 +2,7 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   
   #host configuration for educative platform
+  config.hosts << "x6jr4kg.educative.run"
   config.hosts << "81674631jk52n.educative.run"
 
   # In the development environment your application's code is reloaded on
