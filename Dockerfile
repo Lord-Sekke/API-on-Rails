@@ -12,8 +12,6 @@ RUN cd /myapp && apt-get install git &&\
     
 # Add a script to be executed every time the container starts.COPY entrypoint.sh /usr/bin/
 
-RUN cp -r myapp/API-on-Rails usercode
-RUN cd usercode/API-on-Rails
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
