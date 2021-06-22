@@ -1,8 +1,6 @@
 FROM ruby:2.6.3
 
-
-
-RUN cd myapp && gem install bundler &&\
+RUN gem install bundler &&\
     gem update bundler &&\
     gem update mimemagic &&\
     bundle install
